@@ -24,7 +24,7 @@ jobs:
       - name: Install notebook dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install "bertopic==0.17.4" "sentence-transformers>=3,<7" "pandas>=2.2,<3" "plotly>=6,<8" hdbscan umap-learn scikit-learn torch nbconvert nbformat ipykernel "kaleido==0.2.1"
+          pip install "bertopic==0.17.4" "sentence-transformers>=3,<7" "pandas>=2.2,<3" "plotly>=6,<8" hdbscan umap-learn scikit-learn torch nbconvert nbformat ipykernel "kaleido>=1,<2"
           python -m ipykernel install --user --name python3 --display-name "Python 3"
 
       - name: Execute notebook with outputs
